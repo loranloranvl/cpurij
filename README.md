@@ -28,20 +28,19 @@
 ### module Processer &nbsp;&nbsp;&nbsp;-processer.v  
   最顶层的模块 Processer 调用其他模块组成CPU
 
-#### input
+#### 输入
 
-- clk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主钟控脉冲
-- clk_m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;副钟控脉冲 频率为clk的2倍 只用于存储器 详见实验课本330页最后一段
-- rst&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复位脉冲
+- clk &nbsp;&nbsp;主钟控脉冲
+- clk_m &nbsp;&nbsp;副钟控脉冲 频率为clk的2倍 只用于存储器 详见实验课本330页最后一段
+- rst &nbsp;&nbsp;复位脉冲
 
-#### output
+#### 输出
 
-- ALU_F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALU的直接输出
-- M_R_Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存储器的读数据端口
-- OF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALU的溢出标志位
-- ZF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALU的零标志位
+- ALU_F &nbsp;&nbsp;ALU的直接输出
+- M_R_Data &nbsp;&nbsp;存储器的读数据端口
+- OF &nbsp;&nbsp;ALU的溢出标志位
+- ZF &nbsp;&nbsp;ALU的零标志位
 
-#### 编写思路
 1.  指令格式  
 
 		wire [31:0] inst;
@@ -74,7 +73,7 @@
 	参考实验课本340页的表格
 	控制流的assign照抄书上的 \^_^
 	
-### module Controller &nbsp;&nbsp;&nbsp;-controller.v  
+### module Controller  &nbsp;&nbsp;&nbsp;&nbsp;-controller.v  
   译码及控制单元
 
 1.  OP和func对照表
@@ -108,48 +107,28 @@
 2. 译码
 
     	always @(*) begin
-    		case (OP)
-    			R_DEFAULT: begin
-    				if (func == JR) begin
-    					// blabla
-    				end else begin
-    					// blabla
-    					case (func)
-    						// blabla
-    					endcase
-    				end
-    			end
-    			ADDI: begin
-    				// blabla
-    			end
-    			ANDI: begin
-    				// blabla
-    			end
-    			XORI: begin
-    				// blabla
-    			end
-    			SLTIU: begin
-    				// blabla
-    			end
-    			LW: begin
-    				// blabla
-    			end
-    			SW: begin
-    				// blabla
-    			end
-    			BEQ: begin
-    				// blabla
-    			end
-    			BNE: begin
-    				// blabla
-    			end
-    			J: begin
-    				// blabla
-    			end
-    			JAL: begin
-    				// blabla
-    			end
-    		endcase
+		case (OP)
+			R_DEFAULT: begin
+				if (func == JR) begin
+					// blabla
+				end else begin
+					// blabla
+					case (func)
+						// blabla
+					endcase
+				end
+			end
+			ADDI: 	// blabla
+			ANDI: 	// blabla
+			XORI: 	// blabla
+			SLTIU: 	// blabla
+			LW: 	// blabla
+			SW: 	// blabla
+			BEQ: 	// blabla
+			BNE: 	// blabla
+			J: 	// blabla
+			JAL: 	// blabla
+		endcase
     	end
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考实验课本340页
@@ -174,11 +153,11 @@
     		.douta(Inst_code) // output [31 : 0] douta
     	);
 
-2. 响应J JR JAL指令 根据PC_s的值选择PC的更新方式
--PC_s == 00: 非跳转指令 或者跳转条件不满足的BEQ和BNE
--PC_s == 01: JR指令
--PC_s == 10: 跳转条件满足的BEQ和BNE
--PC_s == 11: J指令 JAL指令
+2. 响应J JR JAL指令 根据PC_s的值选择PC的更新方式  
+*PC_s == 00: 非跳转指令 或者跳转条件不满足的BEQ和BNE
+*PC_s == 01: JR指令
+*PC_s == 10: 跳转条件满足的BEQ和BNE
+*PC_s == 11: J指令 JAL指令
 
 ### ROM_inst
 使用ISE生成的IP核 用作只读指令存储器  
