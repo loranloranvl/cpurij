@@ -162,11 +162,12 @@
 ### ROM_inst
 使用ISE生成的IP核 用作只读指令存储器  
 生成过程与实验五 存储器设计实验类似  
-299页 图14.14选择存储器类型 这里选择Single Port ROM而不是Single Port RAM 其他参数一样  
+实验课本299页 图14.14选择存储器类型  
+选择Single Port ROM而不是Single Port RAM 其他参数一样  
 ROM_inst绑定的初始关联文件是rom_inst.coe
 
 ### RAM
-使用ISE生成的IP核 用作数据存储器
+使用ISE生成的IP核 用作数据存储器  
 参考实验五
 
 ## 参考链接
