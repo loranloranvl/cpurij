@@ -147,17 +147,17 @@
 
 1. 使用PC的高5位作为地址访问指令存储器ROM_inst
 
-    	ROM_inst rominst (
-    		.clka(clk), // input clka
-    		.addra(PC[7:2]), // input [5 : 0] addra
-    		.douta(Inst_code) // output [31 : 0] douta
-    	);
+        ROM_inst rominst (
+            .clka(clk), // input clka
+            .addra(PC[7:2]), // input [5 : 0] addra
+            .douta(Inst_code) // output [31 : 0] douta
+        );
 
 2. 响应J JR JAL指令 根据PC_s的值选择PC的更新方式  
-*PC_s == 00: 非跳转指令 或者跳转条件不满足的BEQ和BNE
-*PC_s == 01: JR指令
-*PC_s == 10: 跳转条件满足的BEQ和BNE
-*PC_s == 11: J指令 JAL指令
+    * PC_s == 00: 非跳转指令 或者跳转条件不满足的BEQ和BNE
+    * PC_s == 01: JR指令
+    * PC_s == 10: 跳转条件满足的BEQ和BNE
+    * PC_s == 11: J指令 JAL指令
 
 ### ROM_inst
 使用ISE生成的IP核 用作只读指令存储器  
