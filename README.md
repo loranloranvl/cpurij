@@ -12,8 +12,8 @@
 
         > git clone https://github.com/loranloranvl/cpurij.git  
 
-  2.  或者下载为zip包 然后解压  
-  打开ISE Design Suite -> File -> open project -> cpu_rij.xise  
+       或者下载为zip包 然后解压  
+  2.  打开ISE Design Suite -> File -> open project -> cpu_rij.xise  
   3.  切换到Simulation界面  
   4.  选中cpu_tb  
   5.  运行Simulate Behavioral Model  
