@@ -53,8 +53,8 @@
 		wire [15:0] imm = inst[15:0];
 		wire [25:0] address = inst[25:0];
 
-    参考实验课本337页的表格
-    这里wire [5:0] OP = inst[31:26];
+    参考实验课本337页的表格  
+    这里wire [5:0] OP = inst[31:26];  
     等价于 wire[5:0] OP; assign OP = inst[31:26];
 
 2.  控制流
