@@ -215,10 +215,6 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path ROM_inst.ngc
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type ngc
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path ROM_inst.sym
-utilities_xmdf::xmdfSetData $instance FileSet $fcount type symbol
-incr fcount
-
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path ROM_inst.v
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog
 incr fcount

@@ -3,7 +3,6 @@ ROM_inst.asy
 ROM_inst.gise
 ROM_inst.mif
 ROM_inst.ngc
-ROM_inst.sym
 ROM_inst.v
 ROM_inst.veo
 ROM_inst.xco
