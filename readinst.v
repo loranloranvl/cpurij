@@ -15,7 +15,7 @@ module readinst(
 	initial PC = 32'h00000000;
 
 	ROM_inst rominst (
-		.clka(clk), // input clka
+		.clka(~clk), // input clka
 		.addra(PC[7:2]), // input [5 : 0] addra
 		.douta(Inst_code) // output [31 : 0] douta
 	);

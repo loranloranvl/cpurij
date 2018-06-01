@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Processor.prj
 
@@ -141,8 +141,8 @@ Elaborating module <Register_Stack>.
 "F:\school files\computerarchitecture\sbise\cpu_rij\registerstack.v" Line 60. $display At time  $time , write 0 with 0
 
 Elaborating module <Alu>.
-"F:\school files\computerarchitecture\sbise\cpu_rij\alu.v" Line 32. $display At time  $time , do 3'b..., with 0 and 0, output 0
-WARNING:HDLCompiler:413 - "F:\school files\computerarchitecture\sbise\cpu_rij\alu.v" Line 35: Result of 32-bit expression is truncated to fit in 1-bit target.
+"F:\school files\computerarchitecture\sbise\cpu_rij\alu.v" Line 29. $display At time  $time , do 3'b..., with 0 and 0, output 0
+WARNING:HDLCompiler:413 - "F:\school files\computerarchitecture\sbise\cpu_rij\alu.v" Line 32: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <RAM>.
 WARNING:HDLCompiler:1499 - "F:\school files\computerarchitecture\sbise\cpu_rij\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
@@ -153,7 +153,7 @@ WARNING:HDLCompiler:1499 - "F:\school files\computerarchitecture\sbise\cpu_rij\i
 
 Synthesizing Unit <Processor>.
     Related source file is "F:\school files\computerarchitecture\sbise\cpu_rij\processer.v".
-INFO:Xst:3210 - "F:\school files\computerarchitecture\sbise\cpu_rij\processer.v" line 66: Output port <imm_s> of the instance <c_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\school files\computerarchitecture\sbise\cpu_rij\processer.v" line 64: Output port <imm_s> of the instance <c_i> is unconnected or connected to loadless signal.
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <Processor> synthesized.
@@ -180,9 +180,9 @@ Unit <Controller> synthesized.
 Synthesizing Unit <readinst>.
     Related source file is "F:\school files\computerarchitecture\sbise\cpu_rij\readinst.v".
     Found 32-bit register for signal <PC>.
-    Found 32-bit adder for signal <PC_new> created at line 33.
-    Found 32-bit adder for signal <PC_new[31]_GND_16_o_add_1_OUT> created at line 51.
-    Found 32-bit 4-to-1 multiplexer for signal <PC_s[1]_PC_new[31]_wide_mux_2_OUT> created at line 48.
+    Found 32-bit adder for signal <PC_new> created at line 13.
+    Found 32-bit adder for signal <PC_new[31]_GND_16_o_add_1_OUT> created at line 31.
+    Found 32-bit 4-to-1 multiplexer for signal <PC_s[1]_PC_new[31]_wide_mux_2_OUT> created at line 28.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
@@ -203,43 +203,43 @@ Synthesizing Unit <Alu>.
     Related source file is "F:\school files\computerarchitecture\sbise\cpu_rij\alu.v".
         ONE32 = 32'b00000000000000000000000000000001
         ZERO32 = 32'b00000000000000000000000000000000
-    Found 33-bit subtractor for signal <GND_19_o_GND_19_o_sub_13_OUT> created at line 27.
-    Found 33-bit adder for signal <n0315> created at line 25.
-    Found 32-bit shifter logical left for signal <B[31]_A[31]_shift_left_17_OUT> created at line 31
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1357_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1365_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1373_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1381_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1389_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1397_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1405_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1413_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1421_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1429_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1437_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1445_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1453_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1461_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1469_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1477_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1485_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1493_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1501_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1509_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1517_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1525_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1533_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1541_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1549_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1557_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1565_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1573_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1581_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1589_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1597_o> created at line 18.
-    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1605_o> created at line 18.
+    Found 33-bit subtractor for signal <GND_19_o_GND_19_o_sub_13_OUT> created at line 24.
+    Found 33-bit adder for signal <n0315> created at line 22.
+    Found 32-bit shifter logical left for signal <B[31]_A[31]_shift_left_17_OUT> created at line 28
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1357_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1365_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1373_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1381_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1389_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1397_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1405_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1413_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1421_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1429_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1437_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1445_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1453_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1461_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1469_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1477_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1485_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1493_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1501_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1509_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1517_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1525_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1533_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1541_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1549_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1557_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1565_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1573_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1581_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1589_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1597_o> created at line 15.
+    Found 1-bit 8-to-1 multiplexer for signal <F[31]_A[31]_MUX_1605_o> created at line 15.
 WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_15_o> created at line 29
+    Found 32-bit comparator greater for signal <A[31]_B[31]_LessThan_15_o> created at line 26
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   1 Latch(s).
@@ -395,17 +395,17 @@ Top Level Output File Name         : Processor.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2607
+# BELS                             : 2497
 #      GND                         : 3
 #      INV                         : 2
 #      LUT1                        : 42
-#      LUT2                        : 35
-#      LUT3                        : 1063
-#      LUT4                        : 109
-#      LUT5                        : 105
-#      LUT6                        : 898
+#      LUT2                        : 34
+#      LUT3                        : 1061
+#      LUT4                        : 87
+#      LUT5                        : 99
+#      LUT6                        : 821
 #      MUXCY                       : 140
-#      MUXF7                       : 82
+#      MUXF7                       : 80
 #      VCC                         : 3
 #      XORCY                       : 125
 # FlipFlops/Latches                : 1036
@@ -428,14 +428,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1036  out of  18224     5%  
- Number of Slice LUTs:                 2254  out of   9112    24%  
-    Number used as Logic:              2254  out of   9112    24%  
+ Number of Slice LUTs:                 2146  out of   9112    23%  
+    Number used as Logic:              2146  out of   9112    23%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2255
-   Number with an unused Flip Flop:    1219  out of   2255    54%  
-   Number with an unused LUT:             1  out of   2255     0%  
-   Number of fully used LUT-FF pairs:  1035  out of   2255    45%  
+ Number of LUT Flip Flop pairs used:   2147
+   Number with an unused Flip Flop:    1111  out of   2147    51%  
+   Number with an unused LUT:             1  out of   2147     0%  
+   Number of fully used LUT-FF pairs:  1035  out of   2147    48%  
    Number of unique control sets:         5
 
 IO Utilization: 
@@ -487,9 +487,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 24.663ns (Maximum Frequency: 40.546MHz)
+   Minimum period: 14.525ns (Maximum Frequency: 68.849MHz)
    Minimum input arrival time before clock: 3.864ns
-   Maximum output required time after clock: 17.868ns
+   Maximum output required time after clock: 17.343ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -498,42 +498,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 24.663ns (frequency: 40.546MHz)
-  Total number of paths / destination ports: 9257621 / 2028
+  Clock period: 14.525ns (frequency: 68.849MHz)
+  Total number of paths / destination ports: 8401649 / 2028
 -------------------------------------------------------------------------
-Delay:               12.332ns (Levels of Logic = 11)
+Delay:               7.262ns (Levels of Logic = 5)
   Source:            ri_i/rominst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
-  Destination:       rs_i/REG_Files_0_512 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk falling
+  Destination:       ri_i/PC_3 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
 
-  Data Path: ri_i/rominst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to rs_i/REG_Files_0_512
+  Data Path: ri_i/rominst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to ri_i/PC_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAMB8BWER:CLKBRDCLK->DOBDO5  257   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
      end scope: 'ri_i/rominst:douta<21>'
-     LUT6:I4->O            1   0.203   0.827  rs_i/Mmux_R_Data_A_81 (rs_i/Mmux_R_Data_A_81)
-     LUT6:I2->O            1   0.203   0.000  rs_i/Mmux_R_Data_A_3 (rs_i/Mmux_R_Data_A_3)
-     MUXF7:I1->O          54   0.140   1.678  rs_i/Mmux_R_Data_A_2_f7 (R_Data_A<0>)
-     LUT5:I3->O            5   0.203   0.715  a_i/Sh961 (a_i/Sh)
-     LUT4:I3->O            1   0.205   0.580  a_i/Mmux__n047911_SW0 (N114)
-     LUT6:I5->O            1   0.205   0.000  a_i/Mmux_F[31]_A[31]_MUX_1605_o_3_lut1 (a_i/Mmux_F[31]_A[31]_MUX_1605_o_3_lut1)
-     MUXCY:S->O            1   0.366   0.580  a_i/Mmux_F[31]_A[31]_MUX_1605_o_3_cy1 (a_i/Mmux_F[31]_A[31]_MUX_1605_o_3)
-     LUT3:I2->O            4   0.205   0.684  a_i/Mmux_F[31]_A[31]_MUX_1605_o_2_f71 (ALU_F_0_OBUF)
-     LUT5:I4->O           16   0.205   1.005  Mmux_W_Data11 (W_Data<0>)
-     LUT3:I2->O            1   0.205   0.000  rs_i/Mmux_REG_Files[1][31]_W_Data[31]_mux_32_OUT110 (rs_i/REG_Files[1][31]_W_Data[31]_mux_32_OUT<0>)
-     FDCE:D                    0.102          rs_i/REG_Files_0_32
+     LUT6:I4->O            1   0.203   0.827  rs_i/Mmux_R_Data_A_876 (rs_i/Mmux_R_Data_A_876)
+     LUT6:I2->O            1   0.203   0.000  rs_i/Mmux_R_Data_A_325 (rs_i/Mmux_R_Data_A_325)
+     MUXF7:I1->O          52   0.140   1.561  rs_i/Mmux_R_Data_A_2_f7_24 (R_Data_A<3>)
+     LUT6:I5->O            1   0.205   0.000  ri_i/Mmux_PC_s[1]_PC_new[31]_wide_mux_2_OUT261 (ri_i/PC_s[1]_PC_new[31]_wide_mux_2_OUT<3>)
+     FDC:D                     0.102          ri_i/PC_3
     ----------------------------------------
-    Total                     12.332ns (4.092ns logic, 8.240ns route)
-                                       (33.2% logic, 66.8% route)
+    Total                      7.262ns (2.703ns logic, 4.559ns route)
+                                       (37.2% logic, 62.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'c_i/_n0094'
-  Clock period: 13.050ns (frequency: 76.628MHz)
-  Total number of paths / destination ports: 1798 / 1
+  Clock period: 11.008ns (frequency: 90.840MHz)
+  Total number of paths / destination ports: 1681 / 1
 -------------------------------------------------------------------------
-Delay:               13.050ns (Levels of Logic = 11)
+Delay:               11.008ns (Levels of Logic = 10)
   Source:            c_i/rt_imm_s (LATCH)
   Destination:       c_i/PC_s_1 (LATCH)
   Source Clock:      c_i/_n0094 falling
@@ -543,22 +537,21 @@ Delay:               13.050ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q             137   0.498   2.203  c_i/rt_imm_s (c_i/rt_imm_s)
-     LUT3:I0->O           10   0.205   1.085  Mmux_ALU_B271 (ALU_B<4>)
-     LUT6:I3->O            5   0.205   0.715  a_i/Sh51 (a_i/Sh5)
-     LUT3:I2->O            3   0.205   0.755  a_i/Sh4511 (a_i/Sh451)
-     LUT6:I4->O            3   0.203   0.879  a_i/Mmux_F[31]_A[31]_MUX_1437_o13 (a_i/Mmux_F[31]_A[31]_MUX_1437_o12)
-     LUT6:I3->O            2   0.205   0.981  a_i/Mmux_F[31]_A[31]_MUX_1437_o14 (ALU_F_21_OBUF)
-     LUT6:I0->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>1 (a_i/F[31]_GND_19_o_equal_27_o<31>)
-     LUT5:I4->O            1   0.205   0.827  a_i/F[31]_GND_19_o_equal_27_o<31>2 (a_i/F[31]_GND_19_o_equal_27_o<31>1)
-     LUT6:I2->O            1   0.203   0.944  a_i/F[31]_GND_19_o_equal_27_o<31>5 (a_i/F[31]_GND_19_o_equal_27_o<31>4)
-     LUT6:I0->O            2   0.203   0.721  a_i/F[31]_GND_19_o_equal_27_o<31>7 (ZF_OBUF)
-     LUT5:I3->O            1   0.203   0.580  c_i/OP[5]_GND_2_o_Select_72_o1 (c_i/OP[5]_GND_2_o_Select_72_o1)
-     LUT6:I5->O            1   0.205   0.000  c_i/OP[5]_GND_2_o_Select_72_o2 (c_i/OP[5]_GND_2_o_Select_72_o)
+     LD:G->Q             132   0.498   2.066  c_i/rt_imm_s (c_i/rt_imm_s)
+     LUT3:I1->O            7   0.203   1.021  Mmux_ALU_B291 (ALU_B<6>)
+     LUT6:I2->O            4   0.203   0.788  a_i/Sh71 (a_i/Sh7)
+     LUT3:I1->O            2   0.203   0.721  a_i/Sh4711 (a_i/Sh471)
+     LUT6:I4->O            2   0.203   0.617  a_i/Mmux_F[31]_A[31]_MUX_1421_o13 (a_i/Mmux_F[31]_A[31]_MUX_1421_o12)
+     LUT6:I5->O            2   0.205   0.864  a_i/Mmux_F[31]_A[31]_MUX_1421_o14 (ALU_F_23_OBUF)
+     LUT6:I2->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>3 (a_i/F[31]_GND_19_o_equal_27_o<31>2)
+     LUT5:I4->O            1   0.205   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>4 (a_i/F[31]_GND_19_o_equal_27_o<31>3)
+     LUT4:I3->O            1   0.205   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>8_SW0 (N52)
+     LUT6:I5->O            2   0.205   0.617  a_i/F[31]_GND_19_o_equal_27_o<31>8 (ZF_OBUF)
+     LUT6:I5->O            1   0.205   0.000  c_i/OP[5]_GND_2_o_Select_72_o3 (c_i/OP[5]_GND_2_o_Select_72_o)
      LD:D                      0.037          c_i/PC_s_1
     ----------------------------------------
-    Total                     13.050ns (2.780ns logic, 10.270ns route)
-                                       (21.3% logic, 78.7% route)
+    Total                     11.008ns (2.575ns logic, 8.433ns route)
+                                       (23.4% logic, 76.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -581,36 +574,35 @@ Offset:              3.864ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'c_i/OP[5]_func[5]_Select_59_o'
-  Total number of paths / destination ports: 674 / 34
+  Total number of paths / destination ports: 592 / 34
 -------------------------------------------------------------------------
-Offset:              12.845ns (Levels of Logic = 9)
-  Source:            c_i/ALU_OP_2 (LATCH)
+Offset:              11.851ns (Levels of Logic = 8)
+  Source:            c_i/ALU_OP_0 (LATCH)
   Destination:       ZF (PAD)
   Source Clock:      c_i/OP[5]_func[5]_Select_59_o falling
 
-  Data Path: c_i/ALU_OP_2 to ZF
+  Data Path: c_i/ALU_OP_0 to ZF
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              79   0.498   1.986  c_i/ALU_OP_2 (c_i/ALU_OP_2)
-     LUT4:I0->O            1   0.203   0.944  a_i/out7_SW2 (N157)
-     LUT6:I0->O            8   0.203   1.167  a_i/Mmux_F[31]_A[31]_MUX_1381_o11 (a_i/Mmux_F[31]_A[31]_MUX_1357_o1)
-     LUT6:I0->O            1   0.203   0.000  a_i/Mmux_F[31]_A[31]_MUX_1397_o12_G (N218)
-     MUXF7:I1->O           3   0.140   1.015  a_i/Mmux_F[31]_A[31]_MUX_1397_o12 (a_i/Mmux_F[31]_A[31]_MUX_1397_o11)
-     LUT6:I0->O            2   0.203   0.617  a_i/Mmux_F[31]_A[31]_MUX_1397_o14 (ALU_F_26_OBUF)
-     LUT6:I5->O            1   0.205   0.924  a_i/F[31]_GND_19_o_equal_27_o<31>3 (a_i/F[31]_GND_19_o_equal_27_o<31>2)
-     LUT6:I1->O            1   0.203   0.944  a_i/F[31]_GND_19_o_equal_27_o<31>5 (a_i/F[31]_GND_19_o_equal_27_o<31>4)
-     LUT6:I0->O            2   0.203   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>7 (ZF_OBUF)
+     LD:G->Q              59   0.498   1.835  c_i/ALU_OP_0 (c_i/ALU_OP_0)
+     LUT3:I0->O           22   0.205   1.478  a_i/Mmux_F[31]_A[31]_MUX_1421_o131 (a_i/Mmux_F[31]_A[31]_MUX_1357_o12)
+     LUT5:I0->O            1   0.203   0.684  a_i/Mmux_F[31]_A[31]_MUX_1477_o14_SW0 (N36)
+     LUT6:I4->O            3   0.203   0.898  a_i/Mmux_F[31]_A[31]_MUX_1477_o15 (ALU_F_16_OBUF)
+     LUT6:I2->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>1 (a_i/F[31]_GND_19_o_equal_27_o<31>)
+     LUT5:I4->O            1   0.205   0.684  a_i/F[31]_GND_19_o_equal_27_o<31>2 (a_i/F[31]_GND_19_o_equal_27_o<31>1)
+     LUT4:I2->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>8_SW0 (N52)
+     LUT6:I5->O            2   0.205   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>8 (ZF_OBUF)
      OBUF:I->O                 2.571          ZF_OBUF (ZF)
     ----------------------------------------
-    Total                     12.845ns (4.632ns logic, 8.213ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                     11.851ns (4.496ns logic, 7.355ns route)
+                                       (37.9% logic, 62.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'c_i/_n0094'
-  Total number of paths / destination ports: 3690 / 34
+  Total number of paths / destination ports: 3456 / 34
 -------------------------------------------------------------------------
-Offset:              14.491ns (Levels of Logic = 10)
+Offset:              13.336ns (Levels of Logic = 10)
   Source:            c_i/rt_imm_s (LATCH)
   Destination:       ZF (PAD)
   Source Clock:      c_i/_n0094 falling
@@ -619,72 +611,72 @@ Offset:              14.491ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q             137   0.498   2.203  c_i/rt_imm_s (c_i/rt_imm_s)
-     LUT3:I0->O           10   0.205   1.085  Mmux_ALU_B271 (ALU_B<4>)
-     LUT6:I3->O            5   0.205   0.715  a_i/Sh51 (a_i/Sh5)
-     LUT3:I2->O            3   0.205   0.755  a_i/Sh4511 (a_i/Sh451)
-     LUT6:I4->O            3   0.203   0.879  a_i/Mmux_F[31]_A[31]_MUX_1437_o13 (a_i/Mmux_F[31]_A[31]_MUX_1437_o12)
-     LUT6:I3->O            2   0.205   0.981  a_i/Mmux_F[31]_A[31]_MUX_1437_o14 (ALU_F_21_OBUF)
-     LUT6:I0->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>1 (a_i/F[31]_GND_19_o_equal_27_o<31>)
-     LUT5:I4->O            1   0.205   0.827  a_i/F[31]_GND_19_o_equal_27_o<31>2 (a_i/F[31]_GND_19_o_equal_27_o<31>1)
-     LUT6:I2->O            1   0.203   0.944  a_i/F[31]_GND_19_o_equal_27_o<31>5 (a_i/F[31]_GND_19_o_equal_27_o<31>4)
-     LUT6:I0->O            2   0.203   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>7 (ZF_OBUF)
+     LD:G->Q             132   0.498   2.066  c_i/rt_imm_s (c_i/rt_imm_s)
+     LUT3:I1->O            7   0.203   1.021  Mmux_ALU_B291 (ALU_B<6>)
+     LUT6:I2->O            4   0.203   0.788  a_i/Sh71 (a_i/Sh7)
+     LUT3:I1->O            2   0.203   0.721  a_i/Sh4711 (a_i/Sh471)
+     LUT6:I4->O            2   0.203   0.617  a_i/Mmux_F[31]_A[31]_MUX_1421_o13 (a_i/Mmux_F[31]_A[31]_MUX_1421_o12)
+     LUT6:I5->O            2   0.205   0.864  a_i/Mmux_F[31]_A[31]_MUX_1421_o14 (ALU_F_23_OBUF)
+     LUT6:I2->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>3 (a_i/F[31]_GND_19_o_equal_27_o<31>2)
+     LUT5:I4->O            1   0.205   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>4 (a_i/F[31]_GND_19_o_equal_27_o<31>3)
+     LUT4:I3->O            1   0.205   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>8_SW0 (N52)
+     LUT6:I5->O            2   0.205   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>8 (ZF_OBUF)
      OBUF:I->O                 2.571          ZF_OBUF (ZF)
     ----------------------------------------
-    Total                     14.491ns (4.906ns logic, 9.585ns route)
-                                       (33.9% logic, 66.1% route)
+    Total                     13.336ns (4.904ns logic, 8.432ns route)
+                                       (36.8% logic, 63.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 596764 / 34
+  Total number of paths / destination ports: 553566 / 34
 -------------------------------------------------------------------------
-Offset:              17.868ns (Levels of Logic = 14)
+Offset:              17.343ns (Levels of Logic = 14)
   Source:            ri_i/rominst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
   Destination:       ZF (PAD)
-  Source Clock:      clk rising
+  Source Clock:      clk falling
 
   Data Path: ri_i/rominst/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to ZF
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB8BWER:CLKBRDCLK->DOBDO0  258   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<16>)
-     end scope: 'ri_i/rominst:douta<16>'
-     LUT6:I4->O            1   0.203   0.827  rs_i/Mmux_R_Data_B_879 (rs_i/Mmux_R_Data_B_879)
-     LUT6:I2->O            1   0.203   0.000  rs_i/Mmux_R_Data_B_326 (rs_i/Mmux_R_Data_B_326)
-     MUXF7:I1->O           4   0.140   0.684  rs_i/Mmux_R_Data_B_2_f7_25 (R_Data_B<4>)
-     LUT3:I2->O           10   0.205   1.085  Mmux_ALU_B271 (ALU_B<4>)
-     LUT6:I3->O            5   0.205   0.715  a_i/Sh51 (a_i/Sh5)
-     LUT3:I2->O            3   0.205   0.755  a_i/Sh4511 (a_i/Sh451)
-     LUT6:I4->O            3   0.203   0.879  a_i/Mmux_F[31]_A[31]_MUX_1437_o13 (a_i/Mmux_F[31]_A[31]_MUX_1437_o12)
-     LUT6:I3->O            2   0.205   0.981  a_i/Mmux_F[31]_A[31]_MUX_1437_o14 (ALU_F_21_OBUF)
+     RAMB8BWER:CLKBRDCLK->DOBDO5  257   1.850   2.171  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<21>)
+     end scope: 'ri_i/rominst:douta<21>'
+     LUT6:I4->O            1   0.203   0.827  rs_i/Mmux_R_Data_A_822 (rs_i/Mmux_R_Data_A_822)
+     LUT6:I2->O            1   0.203   0.000  rs_i/Mmux_R_Data_A_37 (rs_i/Mmux_R_Data_A_37)
+     MUXF7:I1->O           7   0.140   1.138  rs_i/Mmux_R_Data_A_2_f7_6 (R_Data_A<16>)
+     LUT6:I0->O            1   0.203   0.808  a_i/out3 (a_i/out2)
+     LUT6:I3->O           19   0.205   1.072  a_i/out7 (a_i/_n0478)
+     LUT3:I2->O           11   0.205   1.111  a_i/Mmux_F[31]_A[31]_MUX_1549_o12111 (a_i/Mmux_F[31]_A[31]_MUX_1549_o1211)
+     LUT6:I3->O            1   0.205   0.000  a_i/Mmux_F[31]_A[31]_MUX_1517_o12_G (N67)
+     MUXF7:I1->O           3   0.140   1.015  a_i/Mmux_F[31]_A[31]_MUX_1517_o12 (ALU_F_11_OBUF)
      LUT6:I0->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>1 (a_i/F[31]_GND_19_o_equal_27_o<31>)
-     LUT5:I4->O            1   0.205   0.827  a_i/F[31]_GND_19_o_equal_27_o<31>2 (a_i/F[31]_GND_19_o_equal_27_o<31>1)
-     LUT6:I2->O            1   0.203   0.944  a_i/F[31]_GND_19_o_equal_27_o<31>5 (a_i/F[31]_GND_19_o_equal_27_o<31>4)
-     LUT6:I0->O            2   0.203   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>7 (ZF_OBUF)
+     LUT5:I4->O            1   0.205   0.684  a_i/F[31]_GND_19_o_equal_27_o<31>2 (a_i/F[31]_GND_19_o_equal_27_o<31>1)
+     LUT4:I2->O            1   0.203   0.580  a_i/F[31]_GND_19_o_equal_27_o<31>8_SW0 (N52)
+     LUT6:I5->O            2   0.205   0.616  a_i/F[31]_GND_19_o_equal_27_o<31>8 (ZF_OBUF)
      OBUF:I->O                 2.571          ZF_OBUF (ZF)
     ----------------------------------------
-    Total                     17.868ns (6.804ns logic, 11.064ns route)
-                                       (38.1% logic, 61.9% route)
+    Total                     17.343ns (6.741ns logic, 10.602ns route)
+                                       (38.9% logic, 61.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_m'
   Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              5.135ns (Levels of Logic = 2)
+Offset:              5.037ns (Levels of Logic = 2)
   Source:            ram_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
-  Destination:       M_R_Data<18> (PAD)
+  Destination:       M_R_Data<31> (PAD)
   Source Clock:      clk_m rising
 
-  Data Path: ram_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to M_R_Data<18>
+  Data Path: ram_i/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram to M_R_Data<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB8BWER:CLKBRDCLK->DOBDO2    5   1.850   0.714  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<18>)
-     end scope: 'ram_i:douta<18>'
-     OBUF:I->O                 2.571          M_R_Data_18_OBUF (M_R_Data<18>)
+     RAMB8BWER:CLKBRDCLK->DOBDO15    2   1.850   0.616  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (douta<31>)
+     end scope: 'ram_i:douta<31>'
+     OBUF:I->O                 2.571          M_R_Data_31_OBUF (M_R_Data<31>)
     ----------------------------------------
-    Total                      5.135ns (4.421ns logic, 0.714ns route)
-                                       (86.1% logic, 13.9% route)
+    Total                      5.037ns (4.421ns logic, 0.616ns route)
+                                       (87.8% logic, 12.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'a_i/ALU_OP[2]_ALU_OP[2]_AND_127_o'
@@ -716,9 +708,9 @@ Clock to Setup on destination clock a_i/ALU_OP[2]_ALU_OP[2]_AND_127_o
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-c_i/OP[5]_func[5]_Select_59_o|         |         |    2.711|         |
-c_i/_n0094                   |         |         |    5.028|         |
-clk                          |         |         |    9.278|         |
+c_i/OP[5]_func[5]_Select_59_o|         |         |    2.639|         |
+c_i/_n0094                   |         |         |    4.997|         |
+clk                          |         |         |    9.208|         |
 -----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock c_i/OP[5]_func[5]_Select_59_o
@@ -734,9 +726,9 @@ Clock to Setup on destination clock c_i/_n0094
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-c_i/OP[5]_func[5]_Select_59_o|         |         |   11.404|         |
-c_i/_n0094                   |         |         |   13.050|         |
-clk                          |         |         |   16.427|         |
+c_i/OP[5]_func[5]_Select_59_o|         |         |    9.523|         |
+c_i/_n0094                   |         |         |   11.008|         |
+clk                          |         |         |   15.015|         |
 -----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -744,10 +736,10 @@ Clock to Setup on destination clock clk
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-c_i/OP[5]_func[5]_Select_59_o|         |         |    7.512|         |
-c_i/_n0094                   |         |    2.459|    8.314|         |
-clk                          |    7.567|    5.008|   12.332|         |
-clk_m                        |         |         |    6.300|         |
+c_i/OP[5]_func[5]_Select_59_o|         |         |    7.547|         |
+c_i/_n0094                   |         |    2.459|    9.257|         |
+clk                          |    4.467|    7.262|   13.200|         |
+clk_m                        |         |         |    4.619|         |
 -----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_m
@@ -755,20 +747,20 @@ Clock to Setup on destination clock clk_m
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-c_i/OP[5]_func[5]_Select_59_o|         |    6.020|         |         |
-c_i/_n0094                   |         |    7.232|         |         |
-clk                          |   10.743|    8.184|         |         |
+c_i/OP[5]_func[5]_Select_59_o|         |    4.979|         |         |
+c_i/_n0094                   |         |    7.652|         |         |
+clk                          |         |   11.419|         |         |
 -----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.59 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.50 secs
  
 --> 
 
-Total memory usage is 4544244 kilobytes
+Total memory usage is 4544316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   49 (   0 filtered)

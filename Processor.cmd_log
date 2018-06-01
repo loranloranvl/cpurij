@@ -1,3 +1,6 @@
 xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
 xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
 xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
+xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
+xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
+xst -intstyle ise -ifn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.xst" -ofn "F:/school files/computerarchitecture/sbise/cpu_rij/Processor.syr" 
