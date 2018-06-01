@@ -1,6 +1,3 @@
-`ifndef _alu_v_
-`define _alu_v_
-
 module Alu(ALU_OP, A, B, F, ZF, OF);
 	input [2:0] ALU_OP;
 	input [31:0] A, B;
@@ -38,4 +35,3 @@ module Alu(ALU_OP, A, B, F, ZF, OF);
 
 endmodule
 
-`endif

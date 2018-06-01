@@ -32,19 +32,17 @@ module Processor(
 	wire [15:0] imm = inst[15:0];
 	wire [25:0] address = inst[25:0];
 
-	// selectors
+	// selectors and flags
 	wire [1:0] w_r_s;
 	wire imm_s;
 	wire rt_imm_s;
 	wire [1:0] wr_data_s;
-
-	// option and flags
-	wire [2:0] ALU_OP; // for alu
+	wire [2:0] ALU_OP;
 	wire Write_Reg; // for register
 	wire Mem_Write; // for memory
-	wire [1:0] PC_s; // for PC
+	wire [1:0] PC_s;
 
-	// expansion
+	// signed or unsigned expansion
 	wire [15:0] imm_data = (imm_s) ? {{16{imm[15]}}, {imm}} : {{16{1'b0}}, {imm}};
 
 	// register stack
